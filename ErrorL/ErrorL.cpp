@@ -2,14 +2,15 @@
 #include "pch.h"
 #include <string>
 
+using namespace std;
 
-std::string getError()
+__declspec(dllexport) string getError()
 {
 	return "ERROR";
 }
 
 
-std::string getError_with_recomendation(int n_of_recomendation)
+__declspec(dllexport) string getError_with_recomendation(int n_of_recomendation)
 {
 	if (n_of_recomendation == 1)
 	{

@@ -8,6 +8,8 @@
 #endif
 
 #include <string>
+using namespace std;
 
-std::string getError();
-std::string getError_with_recomendation(int n_of_recomendation);
+__declspec(dllexport) string getError();
+
+__declspec(dllexport) string getError_with_recomendation(int n_of_recomendation);
